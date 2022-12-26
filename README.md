@@ -1,0 +1,3 @@
+# spirulam
+Emissione della spirale di Ulam (sia diagonale che orizontale)
+la spiegazione va qui ...
