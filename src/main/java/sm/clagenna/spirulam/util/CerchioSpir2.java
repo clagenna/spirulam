@@ -1,0 +1,46 @@
+package sm.clagenna.spirulam.util;
+
+public record CerchioSpir2(int val, int cerchio, int resto) {
+
+  public static CerchioSpir2 getSpirale(int p_i) {
+    CerchioSpir2 csp = new CerchioSpir2(p_i, 0, 0);
+    if (p_i <= 1)
+      return csp;
+    int noCerchio = 1;
+    int qtInCerchio = 1;
+    int qtTotale = 1;
+    int qtEccesso = 0;
+    for (int i = 1; i < Integer.MAX_VALUE; i++) {
+      noCerchio = i;
+      qtInCerchio = 8 * i;
+      // centro + cerchi esterni 1 + 8 = 9
+      int totNextCerchio = qtTotale + qtInCerchio;
+      // superato il max del cerchio?
+      if (totNextCerchio > (p_i - 1)) {
+        qtEccesso = p_i - qtTotale;
+        break;
+      }
+      qtTotale = totNextCerchio;
+    }
+    csp = new CerchioSpir2(p_i, noCerchio, qtEccesso);
+    return csp;
+  }
+
+  public static Coord coordinate(CerchioSpir2 p_cc) {
+    Coord coo = new Coord(p_cc.val, 0, 0);
+    if (p_cc.val() <= 1)
+      return coo;
+    int qtaFirst = 2 * (p_cc.cerchio - 1) + 1;
+    qtaFirst =  qtaFirst * qtaFirst + 1;
+    int lato = p_cc.cerchio * 8 / 4;
+    int iLato = lato / 2 - 1;
+    coo = new Coord(qtaFirst, p_cc.cerchio, -iLato);
+    for (int k = 1; k < p_cc.resto; k++) {
+      int quadr = k / lato;
+      Coord incr = Coord.quadrante(quadr);
+      coo = coo.add(incr);
+    }
+    return coo;
+  }
+
+}
