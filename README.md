@@ -77,5 +77,12 @@ Sulla quale ogni numero primo è evidenziato
 Sul JPanel ho disegnato un punto nero in corrispondenza di un **numero primo**
 ![Ulam orizontale](https://imgur.com/vRAFEvq "Spirale di Ulam con sviluppo orizzontale")
 
+oppure 
+
+![Ulam orizontale](docs/Ulam Oriz.jpg "Spirale di Ulam con sviluppo orizzontale")
+
 ![Ulam Diagonale](https://imgur.com/bHgeCeJ "Spirale di Ulam con sviluppo diagonale")
 
+oppure 
+
+![Ulam orizontale](docs/Ulam Diag.jpg "Spirale di Ulam con sviluppo diagonale")
