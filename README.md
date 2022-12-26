@@ -74,15 +74,10 @@ La Spirale di Ulam ([vedi su Wikipedia](https://en.wikipedia.org/wiki/Ulam_spira
 </table>
 
 Sulla quale ogni numero primo è evidenziato
-Sul JPanel ho disegnato un punto nero in corrispondenza di un **numero primo**
-![Ulam orizontale](https://i.imgur.com/vRAFEvq.jpeg "Spirale di Ulam con sviluppo orizzontale")
-
-oppure 
-
-![Ulam orizontale](docs/Ulam Oriz.jpg "Spirale di Ulam con sviluppo orizzontale")
+Sul JPanel ho disegnato un punto nero in corrispondenza di un **numero primo** (con sviluppo 
 
 ![Ulam Diagonale](https://i.imgur.com/bHgeCeJ.jpeg "Spirale di Ulam con sviluppo diagonale")
 
-oppure 
+oppure in orizontale 
 
-![Ulam orizontale](docs/Ulam Diag.jpg "Spirale di Ulam con sviluppo diagonale")
+![Ulam orizontale](https://i.imgur.com/vRAFEvq.jpeg "Spirale di Ulam con sviluppo orizzontale")
